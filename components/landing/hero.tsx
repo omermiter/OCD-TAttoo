@@ -39,7 +39,7 @@ export default function Hero() {
         <motion.div
           initial={{ opacity: 0, y: 14 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
+          transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] as [number, number, number, number] }}
           className="flex items-center justify-center gap-2.5 mb-10"
         >
           <MapPin className="w-3 h-3 flex-shrink-0" style={{ color: "#c084fc" }} />
@@ -53,7 +53,7 @@ export default function Hero() {
           <motion.h1
             initial={{ y: "110%", opacity: 0 }}
             animate={{ y: "0%", opacity: 1 }}
-            transition={{ duration: 1.05, ease: [0.22, 1, 0.36, 1], delay: 0.1 }}
+            transition={{ duration: 1.05, ease: [0.22, 1, 0.36, 1] as [number, number, number, number], delay: 0.1 }}
             className="headline-display"
             style={{
               fontSize: "clamp(4rem, 11vw, 10rem)",
@@ -68,7 +68,7 @@ export default function Hero() {
           <motion.h1
             initial={{ y: "110%", opacity: 0 }}
             animate={{ y: "0%", opacity: 1 }}
-            transition={{ duration: 1.05, ease: [0.22, 1, 0.36, 1], delay: 0.24 }}
+            transition={{ duration: 1.05, ease: [0.22, 1, 0.36, 1] as [number, number, number, number], delay: 0.24 }}
             className="headline-display"
             style={{
               fontSize: "clamp(4rem, 11vw, 10rem)",
@@ -84,7 +84,7 @@ export default function Hero() {
         <motion.div
           initial={{ opacity: 0, scaleX: 0 }}
           animate={{ opacity: 1, scaleX: 1 }}
-          transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1], delay: 0.52 }}
+          transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] as [number, number, number, number], delay: 0.52 }}
           className="flex items-center gap-4 my-8 origin-center"
         >
           <span className="h-px w-16" style={{ background: "rgba(192,132,252,0.3)" }} />
@@ -103,7 +103,7 @@ export default function Hero() {
         <motion.p
           initial={{ opacity: 0, y: 18 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.75, ease: [0.22, 1, 0.36, 1], delay: 0.58 }}
+          transition={{ duration: 0.75, ease: [0.22, 1, 0.36, 1] as [number, number, number, number], delay: 0.58 }}
           className="italic text-base md:text-lg leading-relaxed max-w-sm md:max-w-md"
           style={{
             color: "rgba(240,235,248,0.5)",
@@ -119,7 +119,7 @@ export default function Hero() {
         <motion.div
           initial={{ opacity: 0, y: 18 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.75, ease: [0.22, 1, 0.36, 1], delay: 0.72 }}
+          transition={{ duration: 0.75, ease: [0.22, 1, 0.36, 1] as [number, number, number, number], delay: 0.72 }}
           className="flex flex-col sm:flex-row gap-4 mt-10"
         >
           <motion.a

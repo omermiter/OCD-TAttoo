@@ -23,7 +23,7 @@ export default function Navbar() {
     <motion.header
       initial={{ y: -80, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
-      transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
+      transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] as [number, number, number, number] }}
       className={`fixed inset-x-0 top-0 z-50 transition-all duration-500 ${
         scrolled ? "py-3" : "bg-transparent py-5"
       }`}
@@ -108,7 +108,7 @@ export default function Navbar() {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
-            transition={{ duration: 0.32, ease: [0.22, 1, 0.36, 1] }}
+            transition={{ duration: 0.32, ease: [0.22, 1, 0.36, 1] as [number, number, number, number] }}
             className="md:hidden overflow-hidden"
             style={{
               backdropFilter: "blur(24px) saturate(180%)",

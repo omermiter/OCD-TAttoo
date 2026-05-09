@@ -24,7 +24,7 @@ const cardVariants = {
   hidden: { opacity: 0, y: 36, scale: 0.97 },
   visible: {
     opacity: 1, y: 0, scale: 1,
-    transition: { duration: 0.65, ease: [0.22, 1, 0.36, 1] },
+    transition: { duration: 0.65, ease: [0.22, 1, 0.36, 1] as [number, number, number, number] },
   },
 }
 
@@ -38,7 +38,7 @@ export default function Work() {
           initial={{ opacity: 0, y: 28 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
+          transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] as [number, number, number, number] }}
           className="mb-16 md:mb-20"
         >
           <p className="section-label mb-4">Portfolio</p>
@@ -77,7 +77,7 @@ export default function Work() {
               variants={cardVariants}
               className={`group relative overflow-hidden cursor-pointer ${span}`}
               whileHover={{ scale: 1.015 }}
-              transition={{ duration: 0.35, ease: [0.22, 1, 0.36, 1] }}
+              transition={{ duration: 0.35, ease: [0.22, 1, 0.36, 1] as [number, number, number, number] }}
               style={{ backgroundColor: "#1a0533" }}
             >
               {/* Actual tattoo photo */}
