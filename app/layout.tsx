@@ -7,8 +7,8 @@ export const metadata: Metadata = {
     "Independent tattoo artist in Kfar Saba, Israel. Custom designs, fine line work, and permanent artistry. Book your session.",
   keywords: ["tattoo", "tattoo artist", "Kfar Saba", "Israel", "custom tattoo", "fine line tattoo"],
   icons: {
-    icon: "/favicon.svg",
-    shortcut: "/favicon.svg",
+    icon: `${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/favicon.svg`,
+    shortcut: `${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/favicon.svg`,
   },
 };
 

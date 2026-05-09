@@ -182,38 +182,6 @@ export default function Hero() {
           </motion.a>
         </motion.div>
 
-        {/* Stats */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.9, delay: 1.1 }}
-          className="flex gap-12 md:gap-20 mt-14 pt-8"
-          style={{ borderTop: "1px solid rgba(255,255,255,0.06)" }}
-        >
-          {[
-            { value: "500+", label: "Pieces" },
-            { value: "8+",   label: "Years"  },
-            { value: "100%", label: "Custom" },
-          ].map(({ value, label }) => (
-            <div key={label} className="flex flex-col items-center gap-1.5">
-              <span
-                className="headline-display"
-                style={{
-                  fontSize: "clamp(1.8rem, 4vw, 3.2rem)",
-                  color: "rgba(240,235,248,0.9)",
-                  fontStyle: "normal",
-                  fontWeight: 500,
-                  textShadow: "0 2px 24px rgba(7,5,10,0.9)",
-                }}
-              >
-                {value}
-              </span>
-              <span className="section-label" style={{ color: "rgba(192,132,252,0.55)", fontSize: "0.58rem" }}>
-                {label}
-              </span>
-            </div>
-          ))}
-        </motion.div>
       </div>
 
       {/* Scroll indicator */}
