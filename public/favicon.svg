@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <!-- Replace this file with your actual favicon (favicon.svg / favicon.ico / favicon.png) -->
+  <rect width="32" height="32" rx="5" fill="#0d0318"/>
+  <text
+    x="16" y="23"
+    text-anchor="middle"
+    fill="#c084fc"
+    font-family="Georgia, serif"
+    font-style="italic"
+    font-weight="300"
+    font-size="18"
+  >O</text>
+</svg>

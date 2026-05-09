@@ -1,0 +1,22 @@
+# dependencies
+node_modules/
+
+# Next.js
+/.next/
+/out/
+
+# Original source images (processed copies live in public/images/)
+/images/
+
+# env files
+.env
+.env.local
+.env.*.local
+
+# OS
+.DS_Store
+Thumbs.db
+
+# TypeScript
+*.tsbuildinfo
+next-env.d.ts
