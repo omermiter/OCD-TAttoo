@@ -7,8 +7,7 @@ const nextConfig: NextConfig = {
   trailingSlash: true,
 
   images: {
-    loader: "custom",
-    loaderFile: "./lib/image-loader.ts",
+    unoptimized: true,
   },
 
   // Suppress lint / type errors that only appear in CI

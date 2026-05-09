@@ -1,8 +1,9 @@
 "use client"
 
-import Image from "next/image"
 import { motion } from "framer-motion"
 import { Instagram, ExternalLink } from "lucide-react"
+
+const BASE = process.env.NEXT_PUBLIC_BASE_PATH ?? ""
 
 const WORKS = [
   { id: 1, style: "Fine Line",        image: "/images/work-1.jpg", span: "row-span-2" },
@@ -81,12 +82,12 @@ export default function Work() {
               style={{ backgroundColor: "#1a0533" }}
             >
               {/* Actual tattoo photo */}
-              <Image
-                src={image}
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src={`${BASE}${image}`}
                 alt={`${style} tattoo`}
-                fill
-                className="object-cover object-center transition-transform duration-700 ease-out group-hover:scale-105"
-                sizes="(max-width: 768px) 50vw, 33vw"
+                loading="lazy"
+                className="absolute inset-0 w-full h-full object-cover object-center transition-transform duration-700 ease-out group-hover:scale-105"
               />
 
               {/* Dark tint — lifts on hover to reveal photo */}
