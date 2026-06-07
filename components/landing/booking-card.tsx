@@ -29,7 +29,7 @@ export default function BookingCard() {
   const instagramUrl = `https://instagram.com/${INSTAGRAM_HANDLE}`
 
   return (
-    <section id="book" style={{ backgroundColor: "#07050a" }}>
+    <section style={{ backgroundColor: "#07050a" }}>
 
       {/* Top ornamental rule — above the lamp */}
       <div className="mx-auto max-w-3xl px-6 pt-2">
@@ -54,7 +54,7 @@ export default function BookingCard() {
             className="section-label mb-5"
             style={{ color: "rgba(192,132,252,0.7)" }}
           >
-            Book Now
+            Or reach out directly
           </motion.p>
 
           {/* Headline */}
@@ -67,7 +67,7 @@ export default function BookingCard() {
               className="headline-display"
               style={{ fontSize: "clamp(3rem, 8vw, 7rem)", color: "#f0ebf8", fontStyle: "italic", fontWeight: 300, lineHeight: 0.9 }}
             >
-              Ready to get
+              Prefer to
             </motion.h2>
           </div>
           <div className="overflow-hidden">
@@ -79,7 +79,7 @@ export default function BookingCard() {
               className="headline-display"
               style={{ fontSize: "clamp(3rem, 8vw, 7rem)", color: "#c084fc", fontStyle: "italic", fontWeight: 300, lineHeight: 0.9 }}
             >
-              inked?
+              message?
             </motion.h2>
           </div>
 
@@ -107,8 +107,8 @@ export default function BookingCard() {
             className="italic text-base md:text-lg leading-relaxed max-w-md mx-auto"
             style={{ color: "rgba(240,235,248,0.4)", fontFamily: "'EB Garamond', Georgia, serif" }}
           >
-            Send your idea, reference images, and preferred placement.
-            Every piece begins with a conversation.
+            Prefer a quick message? Reach out directly on Instagram or WhatsApp
+            and I'll get back to you within 24 hours.
           </motion.p>
 
           {/* ── Liquid glass CTA cards ── */}

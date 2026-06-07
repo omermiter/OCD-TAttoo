@@ -40,11 +40,41 @@ export default function Hero() {
           initial={{ opacity: 0, y: 14 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] as [number, number, number, number] }}
-          className="flex items-center justify-center gap-2.5 mb-10"
+          className="flex items-center justify-center gap-2.5 mb-4"
         >
           <MapPin className="w-3 h-3 flex-shrink-0" style={{ color: "#c084fc" }} />
           <span className="section-label" style={{ color: "rgba(192,132,252,0.75)" }}>
             Kfar Saba · Israel
+          </span>
+        </motion.div>
+
+        {/* Availability indicator */}
+        <motion.div
+          initial={{ opacity: 0, y: 14 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] as [number, number, number, number], delay: 0.06 }}
+          className="flex items-center justify-center gap-2.5 mb-10"
+        >
+          <span className="relative flex h-1.5 w-1.5 flex-shrink-0">
+            <span
+              className="animate-ping absolute inline-flex h-full w-full rounded-full opacity-75"
+              style={{ background: "#4ade80" }}
+            />
+            <span
+              className="relative inline-flex h-1.5 w-1.5 rounded-full"
+              style={{ background: "#4ade80" }}
+            />
+          </span>
+          <span
+            style={{
+              color: "rgba(74,222,128,0.65)",
+              fontSize: "0.58rem",
+              letterSpacing: "0.25em",
+              fontFamily: "'EB Garamond', Georgia, serif",
+              textTransform: "uppercase",
+            }}
+          >
+            Accepting new clients · Booking 3–4 weeks out
           </span>
         </motion.div>
 
