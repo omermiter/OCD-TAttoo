@@ -1,9 +1,12 @@
 services:
   - type: web
     name: ocd-tattoo
-    env: static
+    env: node
     buildCommand: npm ci && npm run build
-    staticPublishPath: out
+    startCommand: npm run start
+    envVars:
+      - key: RESEND_API_KEY
+        sync: false
     headers:
       - path: /_next/static/*
         name: Cache-Control

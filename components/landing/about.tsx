@@ -58,29 +58,6 @@ export default function About() {
               </p>
             </div>
 
-            {/* Stats */}
-            <div className="mt-10 flex gap-10">
-              {[
-                { value: "6+", label: "Years tattooing" },
-                { value: "400+", label: "Pieces created" },
-                { value: "100%", label: "Custom designs" },
-              ].map(({ value, label }) => (
-                <div key={label}>
-                  <p
-                    className="headline-display"
-                    style={{ fontSize: "2.2rem", color: "#c084fc", lineHeight: 1 }}
-                  >
-                    {value}
-                  </p>
-                  <p
-                    className="section-label mt-2"
-                    style={{ color: "rgba(192,132,252,0.5)", fontSize: "0.58rem" }}
-                  >
-                    {label}
-                  </p>
-                </div>
-              ))}
-            </div>
           </motion.div>
 
           {/* ── Photo frame ── */}
